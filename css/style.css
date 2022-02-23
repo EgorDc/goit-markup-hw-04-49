@@ -353,14 +353,6 @@ nav {
   fill: #2196f3;
 }
 
-/*.customers-icons-item:focus {
-  border: 1px solid #2196f3;
-}*/
-
-/*.customers-icons-item:focus .customers-icons-link {
-  border: 1px solid #2196f3;
-}*/
-
 .customers-icons-link {
   display: flex;
   width: 170px;
