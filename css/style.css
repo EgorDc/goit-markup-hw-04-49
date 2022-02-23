@@ -109,7 +109,6 @@ nav {
   align-items: center;
   margin-left: auto;
 }
-
 .contacts-item {
   display: flex;
   width: 161px;
@@ -119,34 +118,6 @@ nav {
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-item:hover .contacts-icon,
-.contacts-item:focus .contacts-icon {
-  fill: #2196f3;
-}
-.contacts-item:hover .contacts-link,
-.contacts-item:focus .contacts-link {
-  color: #2196f3;
-}
-
-.contacts-icon {
-  margin: 10px;
-  fill: #757575;
-}
-
-.contacts-item-phone {
-  display: flex;
-  width: 161px;
-  align-items: center;
-  fill: #757575;
-}
-.contacts-item-phone:hover .contacts-icon.phone,
-.contacts-item-phone:focus .contacts-icon.phone {
-  fill: #2196f3;
-}
-.contacts-item-phone:hover .contacts-link,
-.contacts-item-phone:focus .contacts-link {
-  color: #2196f3;
-}
 .contacts-link {
   text-decoration: none;
   list-style: none;
@@ -155,6 +126,24 @@ nav {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  display: flex;
+  align-items: center;
+}
+.contacts-icon {
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.contacts-item:hover .contacts-link,
+.contacts-item:hover .contacts-icon {
+  fill: #2196f3;
+  color: #2196f3;
+}
+
+.contacts-link:focus .contacts-icon-icon,
+.contacts-link:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 /*main*/
@@ -316,7 +305,6 @@ nav {
   justify-content: space-between;
   margin: 0 auto;
 }
-
 .social-list-link {
   display: flex;
   width: 44px;
@@ -348,26 +336,36 @@ nav {
   height: 92px;
   align-items: center;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
+  display: flex;
 }
-.customers-icons-item:hover,
-.customers-icons-item:focus {
+.customers-icons-item:hover {
   border: 1px solid #2196f3;
 }
-
-.customers-icons-link {
-  display: flex;
-  width: 106px;
-  height: 60px;
-  margin: 16px 32px;
-}
-
-.customers-icons-item:hover .customers-images,
-.customers-icons-item:focus .customers-images {
+.customers-icons-item:hover .customers-images {
   fill: #2196f3;
 }
 
+.customers-icons-ltem:focus {
+  border: 1px solid #2196f3;
+}
+.customers-icons-link:focus .customers-images {
+  fill: #2196f3;
+}
+
+/*.customers-icons-item:focus {
+  border: 1px solid #2196f3;
+}*/
+
+/*.customers-icons-item:focus .customers-icons-link {
+  border: 1px solid #2196f3;
+}*/
+
+.customers-icons-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+}
 .customers-images {
   display: flex;
   margin: auto;
@@ -378,6 +376,7 @@ nav {
 .conteiner.footer {
   display: flex;
 }
+
 .addres-link {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -430,6 +429,7 @@ nav {
   width: 206px;
   height: 44px;
   justify-content: space-between;
+  align-items: center;
 }
 .social-footer-text {
   font-weight: bold;
